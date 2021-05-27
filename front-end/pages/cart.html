@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Orinoco - Ours en peluche faits à la main</title>
+</head>
+<body>
+
+    <div class="bg-dark">
+        <p>AhAHAHA</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <p> Header </p>
+                <nav class="col navbar navbar-expand-lg bg-dark navbar-dark">
+                    <a class="navbar-brand" href="../index.html"> <img src="../images/logo.jpg" width="66" height="30" alt="Orinoco - logo"> </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navbarContent" class="collapse navbar-collapse">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../index.html">Accueil</a>
+                            </li>
+                            <li class="nav-item active">
+                                <!-- PROBLEME avec la class .active qui ne s'applique par sur l'élément PANIER du menu -->
+                                <a class="nav-link" href="cart.html">Panier</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col">
+            <form>
+                <div class="form-group">
+                    <label for="firstName">Prénom :</label>
+                    <input type="text" class="form-control w-25" placeholder="..." id="firstName" required autofocus>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Nom :</label>
+                    <input type="text" class="form-control w-25" placeholder="..." id="lasttName" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Adresse :</label>
+                    <input type="text" class="form-control w-50" placeholder="..." id="address" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">Ville :</label>
+                    <input type="text" class="form-control w-25" placeholder="..." id="city" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email :</label>
+                    <input type="email" class="form-control w-25" placeholder="..." id="email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <ul class="list-inline text-center">
+                        <li class="list-inline-item"> <a href="#">A propos</a> </li>
+                        <li class="list-inline-item"> <a href="#">Conditions d'utilisation</a> </li>
+                        <li class="list-inline-item"> <a href="#">Conditions générales</a> </li>
+                        <li class="list-inline-item"> <a href="#">FAQ</a> </li>
+                        <li class="list-inline-item"> <a href="#">Contactez nous</a> </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+   
+
+    <script src="../js/product.js"></script>
+    
+</body>
+</html>

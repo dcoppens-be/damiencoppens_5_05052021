@@ -1,0 +1,1 @@
+sass --watch front-end/scss:front-end/css
