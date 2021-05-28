@@ -30,12 +30,56 @@
         </div>
     </div>
 
+    <main id="main">
+
+        <h1> Ce produit n'est pas référencé dans notre catalogue. Merci de choisir un produit disponible sur la page d'accueil.</h1>
+
+    </main>
+
     <div class="row">
         <div class="col-6">
             <p>Image du produit</p>
         </div>
         <div class="col-6">
             <p>Informations du produit</p>
+            <form>
+                <div class="form-group">
+                    <label for="colorChoice">Couleur :</label>
+                    <select name="colorChoice" id="colorChoice">
+                        
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Ajouter au panier</button>
+            </form>
+
+            <table class="table">
+                <caption>Informations du produit</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Nom</th>
+                    <th scope="row" id="name">1</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="col">Couleurs</th>
+                    <td id="colors">Mark</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Description</th>
+                    <td id="description">Otto</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Prix</th>
+                    <td id="price">@mdo</td>
+                  </tr>
+                  <tr>
+                    <th scope="col">Référence</th>
+                    <td id="_id">@mdo</td>
+                  </tr>
+                </tbody>
+              </table>
+
             <form> <!-- method & action -->
                 <label for="quantity">Quantité :</label>
                 <input type="number" min="1" max="9" step="1" id="quantity" /> 
@@ -85,6 +129,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
    
 
+    <script src="../js/functions.js"></script>
     <script src="../js/product.js"></script>
     
 </body>

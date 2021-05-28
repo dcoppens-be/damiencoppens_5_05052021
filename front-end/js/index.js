@@ -42,7 +42,7 @@ async function getFromAPI(url) {
 
         function newCard(node, name,imageUrl,description,link){
             let currentNode = node.appendChild(addElement('div',{class:'col-12 col-sm-6 col-lg-3'}));
-            currentNode = currentNode.appendChild(addElement('div',{class:'card mb-5'}));
+            currentNode = currentNode.appendChild(addElement('div',{class:'card mb-5 h-100'}));
             currentNode.appendChild(addElement('img',{class:'card-img-top',src:imageUrl}));
             currentNode = currentNode.appendChild(addElement('div',{class:'card-body text-center'}));
             let titre = currentNode.appendChild(addElement('h5',{class:'card-title'}));
