@@ -38,3 +38,25 @@ document.getElementById("colorChoice").addEventListener('change', (event) =>{
     localStorage.setItem('color',event.target.value);
     console.log(localStorage.getItem('color'));
 });
+
+document.getElementById("quantityChoice").addEventListener('change', (event) =>{
+    console.log(event.target.value);
+    if (event.target.value < 0){
+        document.getElementById("quantityChoice").value=0;
+    } 
+    else{
+        localStorage.setItem('currentProductQuantity',event.target.value);
+        console.log(localStorage.getItem('currentProductQuantity'));
+    }
+});
+
+document.getElementById("addToCart").addEventListener('click', function(){
+    if (localStorage.getItem(id)){
+        let newQuantity = localStorage.getItem(id) + localStorage.getItem('currentProductQuantity');
+        localStorage.setItem(id,newQuantity);
+        console.log(localStorage.getItem(id));
+    }
+    else{
+        localStorage.setItem(id,localStorage.getItem('currentProductQuantity'));
+    }
+});
