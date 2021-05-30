@@ -38,7 +38,8 @@ async function getFromAPI(url) {
                 - [NODE] noeud du parent où la carte doit être ajoutée
                 - [STRING] nom du produit. Exemple: ...
                 - [STRING] chemin de l'image
-                - [STRING] description */
+                - [STRING] description 
+                - [STRING] lien pour le bouton */
 
         function newCard(node, name,imageUrl,description,link){
             let currentNode = node.appendChild(addElement('div',{class:'col-12 col-sm-6 col-lg-3'}));

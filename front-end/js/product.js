@@ -27,6 +27,8 @@ fetch(url+'/'+id,{method:'GET'})
                 let option = document.getElementById("colorChoice").appendChild(addElement('option',{value:value.colors[i]}));
                 option.textContent=value.colors[i];
             }
+
+            document.getElementById('price').textContent=displayPrice(value.price)+' \u20AC';
             
         })
         .catch(function(error){
@@ -60,3 +62,8 @@ document.getElementById("addToCart").addEventListener('click', function(){
         localStorage.setItem(id,localStorage.getItem('currentProductQuantity'));
     }
 });
+
+function displayPrice(priceInCents){
+    let price=priceInCents/100;
+    return price.toFixed(2).replace('.',',');
+}
